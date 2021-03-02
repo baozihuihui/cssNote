@@ -29,18 +29,18 @@
 - 允许在样式中进行二次运算，注意乘法不需要数字
 
 ```language=scss
-@fontsize:14px;
-@bgcolor:red;
+$fontsize:14px;
+$bgcolor:red;
 .warpper{
-    background:lighten(@bgcolor,40%);
+    background:lighten($bgcolor,40%);
 
     .nav{
-        font-size:@fontsize;
+        font-size:$fontsize;
     }
     .content{
-        font-size:@fontsize + 2px;
+        font-size:$fontsize + 2px;
         &:hover{
-            background:@bgcolor;
+            background:$bgcolor;
         }
     }
 }
